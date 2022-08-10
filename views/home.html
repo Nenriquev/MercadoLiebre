@@ -4,29 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Mercadoliebre</title>
 </head>
+
 <body style="margin: 0px 0px 0px 0px;">
   <header> 
-      <div>
-        <img class="logo" src="./images/logo-mercado-liebre.svg" alt="No image">
-          <div>
+      <div class="row">
+        <a href="/"><img class="logo" src="./images/logo-mercado-liebre.svg" alt="No image"></a>
+          <div class="row">
             <input class="search" type="text" name="input" placeholder="Buscar productos..." size="50">
+            <div class="search-ico"><i class="fas fa-search" style="margin: 8px;"></i></div>
+          </div>
+          <div class="burger-menu">
+            <i class="fas fa-bars" style="margin: 6px;"></i>
           </div>
       </div>
-      <p>Comprá en cuotas y sin tarjeta de crédito</p>
+      <p style="padding-left: 14%;" ><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+       
   </header>
 
   <img class="banner" src="./images/img-home-banner.jpg" alt="#">
-    <h2>Basado en tu ultima visita: </h2>
+    <h2 style="font-size: 24px;">Basado en tu ultima visita: </h2>
   
   <main>
         <div class="images">
           <img src="./images/img-cafetera-moulinex.jpg">
         </div>
         <div class="article">
-          <p>$6.770 <span style="color: green; padding: 20px">40% off</span></p>
+          <span class="price">$6.770</span><span style="color: green; padding: 20px">40% off</span>
           <h3>Cafetera Moulinex</h3>
         </div>
 
@@ -34,7 +44,7 @@
           <img src="./images/img-macbook-pro-2019.jpg">
         </div>
         <div class="article">
-          <p>$230.000 <span style="color: green; padding: 20px">20% off</span></p>
+          <span class="price">$230.000</span><span style="color: green; padding: 20px">20% off</span>
           <h3>MacBook Pro 2019</h3> 
         </div>
 
@@ -59,19 +69,22 @@
 
   <footer> 
 
-    <div class="row">
+    <div class="row" style="margin-top: 5%;">
       <div class="column">
+        <div class="footer-ico"><i class="fas fa-credit-card"></i></div>
         <h3>Pagá con tarjeta o en efectivo</h3>
         <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
           puntos de pago. ¡Y siempre es seguro!
         </p>
       </div>
       <div class="column">
+        <div class="footer-ico"><i class="fas fa-gift"></i></div>
         <h3>Envío gratis desde $ 2.500</h3>
         <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
           productos. Es un beneficio de Mercado Puntos.</p>
       </div>
       <div class="column">
+        <div class="footer-ico"><i class="fas fa-user-shield"></i></div>
         <h3>Seguridad, de principio a fin</h3>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
           porque estás siempre protegid@.</p>
@@ -82,8 +95,7 @@
     
     
     
-    
-    
+
   </footer>
   
 </body>

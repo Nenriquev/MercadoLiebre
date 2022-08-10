@@ -1,6 +1,7 @@
 body {
   min-height: 100vh;
   min-width: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -11,6 +12,31 @@ height: 120px;
 
 .logo{
   width: 200px;
+}
+
+.search{
+  border-radius: 2px;
+  height: 35px;
+  border: none;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.search-ico{
+  background-color: white;
+  text-align: center;
+  width: 40px;
+  height: 35px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input:focus{
+  outline: none;
 }
 
 .banner{
@@ -24,15 +50,33 @@ main{
   align-items: center;
   }
 
-  .column {
-    float: left;
-    width: 15%;
-  }
+.column {
+  float: left;
+  width: 15%;
+  text-align: center;
+}
 
-  .row{
+.row{
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 5%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.price{
+  font-size: 18px;
+}
+
+.burger-menu{
+  border-radius: 3px;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  color:white;
+  background-color: #3483fa;
+}
+
+.footer-ico{
+  font-size: 2em;
+  color:#3483fa;
+}
