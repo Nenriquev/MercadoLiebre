@@ -1,18 +1,24 @@
 body {
-  min-height: 100vh;
-  min-width: 100vh;
   font-family: 'Roboto', sans-serif;
 }
+
 
 header{
 background-color: #fff159;
 width: 100%;
-height: 120px;
+padding-bottom: 10px;
 }
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
 
 .logo{
   width: 200px;
 }
+
 
 .search{
   border-radius: 2px;
@@ -35,37 +41,23 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
+
 input:focus{
   outline: none;
 }
 
-.banner{
-  width: 100%;
+li{
+  padding-top: 5px;
+  margin: 10px;
+  display: inline;
 }
 
-
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-
-.column {
-  float: left;
-  width: 15%;
+.nav-menu-list{
   text-align: center;
+  list-style: none;
+  height: 36px;
 }
 
-.row{
-
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.price{
-  font-size: 18px;
-}
 
 .burger-menu{
   border-radius: 3px;
@@ -76,7 +68,123 @@ main{
   background-color: #3483fa;
 }
 
+.text-nav{
+  padding-left: 10%;
+}
+
+.banner{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.images img{
+  width: 300px;
+  height: 300px;
+}
+
+.fa-truck{
+  color: green;
+  margin-bottom: 8px;
+}
+
+.price{
+  font-size: 18px;
+}
+
+.name-art{
+  display: none;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #888888;
+}
+
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.card{
+  border-top: 1px solid #ebebeb;
+  margin-bottom: 10px;
+  height: 430px;
+}
+
+
+.column {
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
 .footer-ico{
   font-size: 2em;
   color:#3483fa;
+}
+
+
+
+
+@media (min-width: 769px) {
+  .card {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .name-art{
+    display: inline;
+  }
+  .burger-menu{
+    display: none;
+  }
+}
+
+
+@media (max-width: 769px) {
+
+ .nav-menu-list{
+  display: none;
+ }
+ .logo{
+  width: 144px;
+  margin-left: 10px;
+ }
+
+ input[type=text] {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.row#input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-menu{
+  margin-right: 10px;
+}
+
+ #footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.column{
+  width: 80%;
+}
 }

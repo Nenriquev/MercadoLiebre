@@ -13,63 +13,101 @@
 </head>
 
 <body style="margin: 0px 0px 0px 0px;">
+
   <header> 
       <div class="row">
         <a href="/"><img class="logo" src="./images/logo-mercado-liebre.svg" alt="No image"></a>
-          <div class="row">
-            <input class="search" type="text" name="input" placeholder="Buscar productos..." size="50">
-            <div class="search-ico"><i class="fas fa-search" style="margin: 8px;"></i></div>
-          </div>
-          <div class="burger-menu">
+        <div class="row" id="input">
+          <input class="search" type="text" name="input" placeholder="Buscar productos..." size="50">
+          <div class="search-ico"><i class="fas fa-search" style="margin: 8px;"></i></div>
+        </div>
+        <nav>
+          <ul class="nav-menu-list">
+            <li><a href="#">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+            <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i> </a></li>
+            <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
             <i class="fas fa-bars" style="margin: 6px;"></i>
-          </div>
+        </div>
       </div>
-      <p style="padding-left: 14%;" ><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-       
+
+      <div class="row">
+        <nav>
+          <ul class="nav-menu-list">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <span class="text-nav"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</span>
   </header>
 
-  <img class="banner" src="./images/img-home-banner.jpg" alt="#">
-    <h2 style="font-size: 24px;">Basado en tu ultima visita: </h2>
+    <div class="banner" >
+        <img style="width: 100%;" src="./images/img-home-banner.jpg" alt="#">
+    </div>
+
+  <h2 style="font-size: 24px;">Basado en tu ultima visita: </h2>
   
   <main>
+      <div class="card">
         <div class="images">
           <img src="./images/img-cafetera-moulinex.jpg">
         </div>
         <div class="article">
-          <span class="price">$6.770</span><span style="color: green; padding: 20px">40% off</span>
-          <h3>Cafetera Moulinex</h3>
+          <div><i class="fas fa-truck"></i></div>
+          <span class="price">$6.770</span>
+          <span style="color: green;">40% off</span>
+          <span class="name-art">Cafetera Moulinex</span>
         </div>
+      </div>
 
+      <div class="card">
         <div class="images">
           <img src="./images/img-macbook-pro-2019.jpg">
         </div>
         <div class="article">
-          <span class="price">$230.000</span><span style="color: green; padding: 20px">20% off</span>
-          <h3>MacBook Pro 2019</h3> 
+          <div><i class="fas fa-truck"></i></div>
+          <span class="price">$230.000</span>
+          <span style="color: green;">20% off</span>
+          <span class="name-art">MacBook Pro 2019</span> 
         </div>
+      </div>
 
+      <div class="card">
         <div class="images">
           <img src="./images/img-samsung-galaxy-s10.jpg">
         </div>
         <div class="article">
-        <p>$70.500 <span style="color: green; padding: 20px">10% off</span></p>
-        <h3>Samsung Galaxy S10</h3> 
+          <div><i class="fas fa-truck"></i></div>
+          <span class="price">$70.500</span>
+          <span style="color: green;">10% off</span>
+          <span class="name-art">Samsung Galaxy S10</span> 
         </div>
+      </div>
 
-     
+      
+      <div class="card">
         <div class="images">
           <img src="./images/img-tv-samsung-smart.jpg">
         </div>
         <div class="article">
-        <p>$23.200 <span style="color: green; padding: 20px">5% off</span></p>
-        <h3>SmartTv Samsung 43"</h3>
+          <div><i class="fas fa-truck"></i></div>
+          <span class="price">$23.200</span>
+          <span style="color: green;">5% off</span>
+          <span class="name-art">SmartTv Samsung 43"</span>
+        </div>
       </div>
 
   </main>
 
   <footer> 
 
-    <div class="row" style="margin-top: 5%;">
+    <div class="row" id="footer" style="margin-top: 5%;">
       <div class="column">
         <div class="footer-ico"><i class="fas fa-credit-card"></i></div>
         <h3>Pagá con tarjeta o en efectivo</h3>
