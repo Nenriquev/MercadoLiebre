@@ -2,16 +2,23 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/*HEADER*/
 
 header{
 background-color: #fff159;
 width: 100%;
-padding-bottom: 10px;
+padding-bottom: 20px;
 }
 
 a{
   text-decoration: none;
   color:black;
+}
+
+.nav-col{
+  display: flex;
+  justify-content: center;
+  flex-basis: 33.3%;
 }
 
 
@@ -35,6 +42,11 @@ a{
   box-shadow: 1px 1px 5px #888888;
 }
 
+.row-input{
+  display: flex;
+  align-items: center;
+}
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -47,15 +59,14 @@ input:focus{
 }
 
 li{
-  padding-top: 5px;
   margin: 10px;
   display: inline;
 }
 
 .nav-menu-list{
+  margin: 0;
   text-align: center;
   list-style: none;
-  height: 36px;
 }
 
 
@@ -68,20 +79,28 @@ li{
   background-color: #3483fa;
 }
 
-.text-nav{
-  padding-left: 10%;
+.row-nav{
+  padding-top: 20px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
 }
+
+
 
 .banner{
    display: flex;
    justify-content: center;
-   align-items: center;
+   
 }
+
+/*MAIN*/
 
 main{
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   }
 
 .images img{
@@ -129,8 +148,8 @@ main{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-
 
 
 .footer-ico{
@@ -140,8 +159,8 @@ main{
 
 
 
-
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
+  
   .card {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
@@ -156,9 +175,11 @@ main{
 
 @media (max-width: 769px) {
 
+ 
  .nav-menu-list{
   display: none;
  }
+
  .logo{
   width: 144px;
   margin-left: 10px;
@@ -173,7 +194,15 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
 }
+
+.nav-col#text{
+  padding-top: 10px;
+  flex-basis: 85%;
+  justify-content: center;
+}
+
 
 .burger-menu{
   margin-right: 10px;
