@@ -1,0 +1,129 @@
+html {
+  font-family: 'Roboto';
+}
+
+body{
+  background-color: #ededed;
+}
+
+/*HEADER*/
+
+header{
+  background-color: #fff159;
+  width: 100%;
+  height: 200px;
+  }
+
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  
+  .nav-col{
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+  }
+  
+  
+  .logo{
+    width: 200px;
+  }
+
+  .card{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-height: 26rem;
+    padding-bottom: 0;
+  }
+
+  .row-box{
+      display: flex;
+      margin-top: 15px;
+    }
+  
+  .col{
+      display: flex;
+      flex-direction: column;
+      flex: 45%;
+    }
+
+
+    input[type=text],
+    input[type=password]{
+      outline: none;
+      padding: 18px 20px;
+      border: solid 1px #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    span{
+      font-size: 14px;
+      font-family: 'Roboto';
+    }
+
+    input:focus{
+      border: solid 2px #3483fa;
+    }
+
+    .row-btn{
+        display: flex;
+        justify-content: center;
+      }
+    
+    .btn{
+      margin-top: 10%;
+      margin-bottom: 1%;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      background-color: #3483fa;
+      height: 40px;
+      width: 100%;
+      }
+
+    .btn-register{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border: none;
+      font-family: 'Roboto';
+      font-size: 15px;
+      font-weight: 600;
+      color: #3483fa;
+      height: 40px;
+      width: 100%;
+        }
+   
+
+
+  form{
+    padding: 50px;
+  }
+
+
+
+  @media (min-width: 768px) {
+  .card{
+    margin: -6.875rem auto 0;
+    max-width: 26.5rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    -webkit-box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 .0625rem .125rem 0 rgba(0,0,0,.15);
+}
+
+  } 
+  
+  
