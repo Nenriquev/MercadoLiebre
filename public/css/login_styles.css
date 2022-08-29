@@ -90,7 +90,14 @@ header{
       background-color: #3483fa;
       height: 40px;
       width: 100%;
+      cursor: pointer;
+      transition: background-color .2s linear;
       }
+
+    .btn:hover{
+      background-color: #0022AA;
+      transition: background-color .2s linear;
+    }
 
     .btn-register{
       display: flex;

@@ -83,7 +83,15 @@ input#seller{
   background-color: #3483fa;
   height: 40px;
   width: 50%;
+  cursor: pointer;
+  transition: background-color .2s linear;
+  }
+
+.btn:hover{
+  background-color: #0022AA;
+  transition: background-color .2s linear;
 }
+
 
 
 @media (max-width: 769px) {
