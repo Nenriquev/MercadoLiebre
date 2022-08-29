@@ -4,7 +4,7 @@ import path from 'path'
 
 const app = express()
 
-app.listen(3030, () =>{
+app.listen(process.env.PORT || 3030, () =>{
   console.log("Servidor corriendo en el puerto 3030")
 })
 
