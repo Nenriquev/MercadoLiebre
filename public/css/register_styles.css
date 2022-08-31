@@ -74,7 +74,7 @@ input#seller{
 
 .btn{
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
   border: none;
   border-radius: 5px;
   font-family: 'Roboto';
@@ -90,6 +90,15 @@ input#seller{
 .btn:hover{
   background-color: #0022AA;
   transition: background-color .2s linear;
+}
+
+.btn-reset{
+  border: none;
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #3483fa;
+  height: 40px;
+  cursor: pointer;
 }
 
 

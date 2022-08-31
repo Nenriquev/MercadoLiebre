@@ -98,6 +98,13 @@ li{
 
 /*MAIN*/
 
+h2{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 main{
   display: flex;
   justify-content: space-evenly;
@@ -108,6 +115,7 @@ main{
 .images img{
   width: 300px;
   height: 300px;
+  object-fit: contain;
 }
 
 .fa-truck{
@@ -120,10 +128,12 @@ main{
 }
 
 .name-art{
-  display: none;
+  visibility: hidden;
   margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 15px;
   color: #888888;
+
   
 }
 
@@ -137,7 +147,8 @@ main{
 .card{
   border-top: 1px solid #ebebeb;
   margin-bottom: 10px;
-  height: 430px;
+  height: auto;
+  width: 300px;
 }
 
 
@@ -170,7 +181,7 @@ main{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
   .card:hover .name-art{
-    display: inline;
+    visibility: inherit;
   }
   .card:hover .fas{
     animation: myAnim 2s ease 0s 1 normal forwards;
